@@ -19,8 +19,8 @@ linux-nginx-automation/
 > [!NOTE]
 > ## ▶️ Uso
 >  1. Clona el repositorio: 
-    git clone https://github.com/SantiagoChivata/linux-nginx-automation.git
-    cd linux-nginx-automation
+```git clone https://github.com/SantiagoChivata/linux-nginx-automation.git```
+```cd linux-nginx-automation```
 >  2. Dar permisos al script:
 ```chmod +x nginx-install.sh```
 >  3. Ejecútalo con sudo:
