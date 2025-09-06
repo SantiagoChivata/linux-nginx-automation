@@ -8,6 +8,7 @@ linux-nginx-automation/
 ├── README.md          # Documentación del proyecto
 ├── nginx-install.sh   # Script Bash que automatiza la instalación
 └── screenshots/       # Capturas de evidencia
+```
 
 
 ## ⚙️ Requisitos
