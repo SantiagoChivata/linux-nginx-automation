@@ -3,11 +3,11 @@
 Este proyecto contiene un script en **Bash** para instalar y configurar un servidor web **Nginx** automáticamente en Linux.
 
 ## 📂 Estructura
+```text
 linux-nginx-automation/
-│── README.md
-│── nginx-install.sh
-│── screenshots/
-└── docs/
+├── README.md          # Documentación del proyecto
+├── nginx-install.sh   # Script Bash que automatiza la instalación
+└── screenshots/       # Capturas de evidencia
 
 
 ## ⚙️ Requisitos
@@ -17,22 +17,20 @@ linux-nginx-automation/
 
 > [!NOTE]
 > ## ▶️ Uso
->   * 1. Clona el repositorio: 
+>  1. Clona el repositorio: 
     git clone https://github.com/SantiagoChivata/linux-nginx-automation.git
     cd linux-nginx-automation
-
->   * 2. Dar permisos al script:
+>  2. Dar permisos al script:
 ```chmod +x nginx-install.sh```
-
->   * 3. Ejecútalo con sudo:
+>  3. Ejecútalo con sudo:
 ```sudo ./nginx-install.sh```
-
->   * 4. Verificar que Nginx está corriendo, Abre en tu navegador:
+>  4. Verificar que Nginx está corriendo, Abre en tu navegador:
 ```http://localhost```
 >   O desde terminal:
 ```curl -I http://localhost```
 ```curl http://localhost | head -n 20```
 
+> [!NOTE]
 > ## Validaciones que realiza el script
 >   * Detección de distribución (Debian/Ubuntu o CentOS/RHEL).
 >   * Verifica si Nginx ya está instalado (y no lo reinstala).
@@ -44,8 +42,7 @@ linux-nginx-automation/
 
 > [!IMPORTANT]
 > 🛠️ Buenas prácticas aplicadas
-
-✅ Idempotencia: si ejecutas el script dos veces, no rompe nada.
-✅ Uso de set -e para detenerse en caso de errores.
-✅ Funciones claras (check_root, install_nginx).
-✅ Documentación en README.md y capturas en screenshots/.
+>   * Idempotencia: si ejecutas el script dos veces, no rompe nada.
+>   * Uso de set -e para detenerse en caso de errores.
+>   * Funciones claras (check_root, install_nginx).
+>   * Documentación en README.md y capturas en screenshots/.
